@@ -1,0 +1,79 @@
+@font-face {
+    font-family: IranSans;
+    src: url(../../../assets/fonts/persianfont/IranSans.woff);
+}
+
+@font-face {
+    font-family: BYekan;
+    src: url(../../../assets/fonts/persianfont/BYekan.woff);
+}
+
+:root {
+    --Red: #F63854;
+    --Blue: rgb(110, 110, 110);
+}
+
+* {
+    font-family: IranSans;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    width: 65%;
+    min-width: 320px;
+    max-width: 400px;
+    margin-top: 200px;
+    padding: 10px 14px;
+    border-radius: 6px;
+    box-shadow: -1px 3px 15px 0px #888888;
+    background-color: rgba(110, 110, 110, 0.51);
+}
+
+div.input-holder {
+    display: block;
+    margin: 10px 0;
+}
+
+input,
+select {
+    outline: none;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 4px 5px;
+    margin: 3px 0;
+    border-radius: 4px;
+    border: none;
+}
+
+input::placeholder,
+option,
+select {
+    font-family: IranSans;
+}
+
+input[type="submit"] {
+    width: fit-content;
+    margin: 6px 0 4px 0;
+    padding: 6px 24px;
+    border-radius: 999px;
+    background-color: var(--Red);
+    font-size: 15px;
+}
+
+#price {
+    color: white;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+input{
+    -moz-appearance: textfield;
+}

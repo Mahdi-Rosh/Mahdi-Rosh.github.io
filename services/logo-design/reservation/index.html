@@ -1,0 +1,89 @@
+<!-- <?php
+include_once "../../../assets/php/db_conn.php";
+include_once "../../../assets/php/form-validator.php";
+
+session_start();
+
+// Check If The User Isn't Logged In
+if (empty($_SESSION["logged-in"]) or $_SESSION["logged-in"] === FALSE) {
+    // Redirect To Login Page With A Redirect Address
+    $self = urlencode($_SERVER["PHP_SELF"]);
+    $address = "../../../form-login/login.php?redirect=$self";
+    header("location: $address");
+    exit();
+}
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    
+    // Variables
+    // photo-num, photo-city, photo-type, photo-date
+
+}
+
+?> -->
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>درخواست طراحی لوگو</title>
+    <!-- JQuery -->
+    <script src="../../../assets/js/jquery-min.js"></script>
+    <!-- Perisan Date Picker -->
+    <link rel="stylesheet" href="../../../assets/persiandate/css/persian.datepicker.css" />
+    <script src="../../../assets/persiandate/js/persian.date.js"></script>
+    <script src="../../../assets/persiandate/js/persian.datepicker.js"></script>
+    <!-- Main Style And Script -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="submit.js" defer></script>
+
+</head>
+
+<body>
+
+    <!-- <?php echo htmlspecialchars($_SERVER["PHP_SELF"]) ?> -->
+    <form onsubmit="Submit(event)">
+
+        <!-- Type Of Logo -->
+        <div class="input-holder">
+            <select name="logo-type" required oninput="CalculateChanges()">
+                <option value="placeholder" disabled selected>نوع لوگو</option>
+                <option value="تصویری">تصویری</option>
+                <option value="ترکیبی">ترکیبی</option>
+                <option value="تایپ">تایپ</option>
+            </select>
+        </div>
+
+        <!-- Delivery Time -->
+        <div class="input-holder">
+            <select name="delivery-time" required oninput="CalculateChanges()">
+                <option value="placeholder" disabled selected>زمان تحویل</option>
+                <option value="یک هفته">یک هفته</option>
+                <option value="دو هفته">دو هفته</option>
+                <option value="سه هفته">سه هفته</option>
+                <option value="یک ماه">یک ماه</option>
+            </select>
+        </div>
+
+        <!-- Description -->
+        <input type="text" name="description" placeholder="توضیحات مختصر" class="input-holder" style="margin-bottom: 15px;">
+
+        <!-- WhatsApp Number -->
+        <input type="tel" name="whatsapp-number" placeholder="شماره واتساپ" class="input-holder">
+
+        <!-- Price -->
+        <p id="price"></p>
+
+        <input type="submit" value="ارسال اطلاعات">
+
+    </form>
+
+
+</body>
+
+</html>

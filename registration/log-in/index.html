@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <title>فرم ثبت نام</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/assets/fonts/persianfontstyle.css">
+    <script src="../query-string-parser.js" defer></script>
+    <script src="script.js" defer></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" /> -->
+    <!-- <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script> -->
+</head>
+
+<body>
+    <div class="container">
+        <form onsubmit="Login(event)">
+            <div class="title">ورود!</div>
+
+            <div id="error"></div>
+
+            <div class="input-box underline">
+                <!-- <i class="fas fa-envelope"></i> -->
+                <input type="tel" id="phoneNumber" placeholder="شماره تلفن" required>
+                <div class="underline"></div>
+            </div>
+            <div class="input-box">
+                <input type="password" id="password" placeholder="رمز عبور" required>
+                <div class="underline"></div>
+            </div>
+
+            <div class="input-box button">
+                <input type="submit" name="" value="ورود">
+            </div>
+        </form>
+        <a href="/registration/sign-up/" class="creat-newaccont">هنوز ثبت نام ثبت نکردی؟</a>
+        <a href="/registration/forgot-password/" class="froget-password">رمز عبورت یادت رفته؟!</a>
+    </div>
+</body>
+
+</html>
