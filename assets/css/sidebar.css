@@ -1,0 +1,119 @@
+:root {
+    --projectRed: #F63854;
+}
+
+.user-icon {
+    position: fixed;
+    left: 8px;
+    top: 8px;
+    color: var(--projectRed);
+    width: 35px;
+    height: 35px;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 9999px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: left 0.5s, color 0.5s;
+    z-index: 999999999;
+}
+
+#user-Icon-I {
+    position: relative;
+    right: 1px;
+    bottom: 1px;
+    font-size: 24px;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.sidebar-container {
+    position: fixed;
+    left: 0;
+    bottom: 50vh;
+    width: 3%;
+    height: 45vh;
+    border-radius: 0 15px 15px 0;
+    background-color: var(--projectRed);
+    color: rgb(87, 87, 87);
+    overflow: hidden;
+    transform: translateY(50%);
+    transition: all 0.5s;
+    z-index: 99999999;
+}
+
+.sidebar-content {
+    width: 100%;
+    height: 70%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    bottom: 50%;
+    left: 0;
+    transform: translateY(50%);
+}
+
+.sidebar-icons {
+    color: white;
+    font-size: 20px;
+    height: 100%;
+    margin-left: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    right: 3px;
+    /* border: thin solid black; */
+}
+
+.sidebar-text {
+    height: 100%;
+    width: 0px;
+    margin-right: 3px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    white-space: nowrap;
+    color: white;
+    transition: width 0.5s;
+    /* border: thin black solid; */
+}
+
+
+/* Big Screens */
+
+@media (min-width: 768px) {
+    .user-icon {
+        visibility: hidden;
+    }
+    .sidebar-container {
+        visibility: visible;
+        min-width: 40px;
+    }
+    .sidebar-container:hover {
+        width: calc(40px + 8%);
+    }
+    .sidebar-container:hover .sidebar-text {
+        width: fit-content;
+    }
+}
+
+
+/* Small Screens */
+
+@media (max-width: 767px) {
+    .user-icon {
+        visibility: visible;
+    }
+    .sidebar-container {
+        visibility: hidden;
+    }
+    .sidebar-content {
+        height: 77%;
+    }
+    .sidebar-text {
+        width: fit-content;
+    }
+}
