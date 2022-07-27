@@ -83,17 +83,17 @@ const inputs = {
     areNull: true,
     mazanSelected: false,
     commercialSelected: false,
-    photoNumInput: document.querySelector("input[name='photo-num']"),
+    photoNumInput: document.querySelector("input[name='number-of-photos']"),
     photoTypeInput: document.querySelector("select[name='photo-type']"),
-    photoCityInput: document.querySelector("select[name='photo-city']"),
+    photoCityInput: document.querySelector("select[name='city']"),
 
     photoTypeInputOptions: {
-        portrait: document.querySelector("option[value=portrait]"),
-        commercial: document.querySelector("option[value=commercial]"),
+        portrait: document.querySelector("option[value=پرتره]"),
+        commercial: document.querySelector("option[value=تبلیغاتی]"),
     },
     photoCityInputOptions: {
-        tehran: document.querySelector("option[value=tehran]"),
-        mazandaran: document.querySelector("option[value=mazandaran]"),
+        tehran: document.querySelector("option[value=تهران]"),
+        mazandaran: document.querySelector("option[value=مازندران]"),
     },
 
     Update: function () {
