@@ -1,0 +1,100 @@
+@font-face {
+    font-family: Yekan;
+    src: url(persianfont/BYekan.woff);
+}
+
+@font-face {
+    font-family: IranSans;
+    src: url(persianfont/IranSans.woff);
+}
+
+#navbarCollapse {
+    font-family: IranSans;
+}
+
+#footer {
+    font-family: Yekan;
+}
+
+.footer-titel {
+    font-family: Yekan;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: IranSans;
+}
+
+.eng-head-title,
+.section-title {
+    font-family: 'Arvo', serif;
+}
+
+#persian-heading {
+    font-family: IranSans;
+}
+
+p {
+    font-family: Yekan;
+}
+
+.header-button a {
+    font-family: Yekan;
+}
+
+.content a {
+    font-family: Yekan;
+}
+
+#english-text {
+    font-family: sans-serif;
+}
+
+.reserv-form {
+    font-family: IranSans;
+}
+
+.submit-button {
+    font-family: Yekan;
+    font-size: 120%;
+}
+
+.yekan {
+    font-family: Yekan;
+}
+
+.iran-sans {
+    font-family: IranSans;
+}
+
+input{
+    
+    font-family: yekan;
+
+}
+
+
+.froget-password{
+    font-family: Yekan;
+}
+
+input .mail{
+    font-family: IranSans;
+}
+
+input.mail::placeholder{
+    font-family: Yekan;
+}
+
+.title{
+    font-family: IranSans;
+}
+
+.o-m{
+    font-family: IranSans;
+}
+
