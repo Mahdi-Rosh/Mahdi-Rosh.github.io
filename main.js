@@ -9,6 +9,7 @@ xhr.onreadystatechange = function()
 {
     if (this.readyState === 4 && this.status === 200)
     {
+        console.log(this.responseText);
         const productsJSON = JSON.parse(this.responseText);
         console.log(productsJSON);
         container[1] = [];
