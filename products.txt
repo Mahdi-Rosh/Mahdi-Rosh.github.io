@@ -1,4 +1,0 @@
-همبرگر,55000,images/hamburger.png
-پیتزا,120000,images/pizza.png
-همبرگر,75000,images/hamburger.png
-پیتزا,160000,images/pizza.png
