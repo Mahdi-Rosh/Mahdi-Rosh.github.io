@@ -55,7 +55,7 @@ xhr.onreadystatechange = function()
     }
 }
 
-xhr.open("GET", "get-products.php", true);
+xhr.open("GET", "products.json", true);
 xhr.send();
 
 function MakeProductElement(name, price, image)
