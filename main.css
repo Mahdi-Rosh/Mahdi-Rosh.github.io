@@ -1,0 +1,96 @@
+@font-face {
+    font-family: BYekan;
+    src: url(fonts/persian/BYekan.woff);
+}
+
+@font-face {
+    font-family: IranSans;
+    src: url(fonts/persian/IranSans.woff);
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: BYekan;
+}
+
+body
+{
+    background-color: rgb(219, 246, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+div#zoom
+{
+    display: none;
+    background-color: rgb(243, 155, 88);
+    width: 80%;
+    max-width: 500px;
+    position: fixed;
+    right: 50%;
+    top: 50%;
+    transform: translate(50%, -50%);
+}
+
+div.suggestion
+{
+    width: 30%;
+    background-color: rgb(180, 115, 65);
+}
+
+div#menu
+{
+    background-color: rgb(104, 151, 167);
+    display: grid;
+    margin: 30px 0;
+    padding: 15px;
+    width: 75%;
+    max-width: 750px;
+    row-gap: 10px;
+    column-gap: 10px;
+    justify-content: space-evenly;
+    grid-template-columns: 100%;
+}
+
+div.product
+{
+    background-color: rgb(229, 190, 153);
+}
+
+p
+{
+    padding: 8px;
+}
+
+div.image-holder
+{
+    width: 75%;
+    margin: 30px auto 10px auto;
+}
+
+img
+{
+    width: 100%;
+}
+
+/* Tablets */
+@media only screen and (min-width: 480px)
+{
+    div#menu
+    {
+        grid-template-columns: 50% 50%;
+    }
+}
+
+/* Laptops */
+@media only screen and (min-width: 800px)
+{
+    div#menu
+    {
+        grid-template-columns: 33% 33% 33%;
+    }
+}
